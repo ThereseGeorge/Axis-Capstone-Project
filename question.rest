@@ -34,5 +34,5 @@ content-type: application/json
 DELETE http://localhost:8080/questions/answer/110
 
 ### Delete Question By Id 
-DELETE http://localhost:8080/questions/110
+DELETE http://localhost:8080/questions/43
 

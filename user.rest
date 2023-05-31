@@ -11,7 +11,7 @@ POST http://localhost:8080/user/loginv2 HTTP/1.1
 content-type: application/json
 
 {
-"userName" : "Lancy", "password" : "Lancy@1234"
+"userName" : "Lay", "password" : "Lany@1234"
 } 
 
 ### Enroll by user id and course id 

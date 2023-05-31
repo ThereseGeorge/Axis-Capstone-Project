@@ -78,7 +78,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public LoginResponseDto loginUserForResponse(LoginDto dto) {
         User user = repository.findByUserNameAndPassword(dto.getUserName(), dto.getPassword())
-                .orElseThrow(() -> new UserNotFoundException("UseName/Password is not valid"));
+                .orElseThrow(() -> new UserNotFoundException("UserName/Password is not valid"));
         return dynamicMapper.convertor(user, new LoginResponseDto());
     }
 

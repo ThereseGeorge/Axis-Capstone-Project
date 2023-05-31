@@ -38,4 +38,4 @@ content-type: application/json
   "endDate": "2022-01-02"
 }
 ### Get Course By Name
-GET http://localhost:8080/courses/name?courseName=python
+GET http://localhost:8080/courses/name?courseName=path
