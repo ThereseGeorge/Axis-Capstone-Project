@@ -1,0 +1,41 @@
+### Create New Account
+
+POST http://localhost:8080/courses/createNewCourse HTTP/1.1
+content-type: application/json
+
+{ 
+ 
+  "courseName" : "Java", 
+  "facultyName" : "Mary", 
+  "startDate":"2020-01-01", 
+  "endDate": "2022-01-02" ,
+  "material" : "https://www.w3schools.com/html/html_css.asp",
+  "recordings": "https://meet.google.com/woi-gjix-jsx"
+}
+
+### Get All Courses
+GET http://localhost:8080/courses/list
+
+### Delete user By Id 
+DELETE http://localhost:8080/courses/delete/17
+
+### Get Course By Id 
+GET http://localhost:8080/courses/getCourseById/18
+
+
+
+### update the course by id
+PUT http://localhost:8080/courses/updateCourse/18 HTTP/1.1 
+content-type: application/json
+
+{
+  "courseId" : "18", 
+  "courseName" : "HTML", 
+  "facultyName" : "Aishwarya", 
+  "material" : "https://www.w3schools.com/html/html_css.asp",
+  "recording": "https://meet.google.com/woi-gjix-jsx",
+  "startDate":"2020-01-01", 
+  "endDate": "2022-01-02"
+}
+### Get Course By Name
+GET http://localhost:8080/courses/name?courseName=python

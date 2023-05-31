@@ -1,0 +1,38 @@
+### Create New Question 
+POST http://localhost:8080/questions/ HTTP/1.1 
+content-type: application/json
+
+{ 
+  
+    "studentName" : "Fiona", 
+    "question" : "What is HTML?" }
+
+### Get Question by Id 
+GET http://localhost:8080/questions/21
+
+### Get all Questions 
+GET http://localhost:8080/questions HTTP/1.1
+
+### Create New Answer 
+POST http://localhost:8080/questions/answer/21
+content-type: application/json
+
+{
+    "answer": "HTML is standard markup language for web pages."
+}
+
+### Update Answer
+
+PUT http://localhost:8080/questions/answer/83 HTTP/1.1 
+content-type: application/json
+
+{
+    "answer" : "machine learning is something"
+}
+
+### Delete Answer By Id 
+DELETE http://localhost:8080/questions/answer/110
+
+### Delete Question By Id 
+DELETE http://localhost:8080/questions/110
+

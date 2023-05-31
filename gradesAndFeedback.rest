@@ -1,0 +1,14 @@
+### Create New user feedback
+
+POST http://localhost:8080/user/2/feedback HTTP/1.1 
+content-type: application/json
+
+{
+
+"feedback": "helloo itis nme", "grade": 10.0
+}
+
+### Get All feedbacks
+
+GET http://localhost:8080/user/feedback
+

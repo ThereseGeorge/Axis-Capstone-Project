@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/axisprojectdb
+    username: root
+    password: therese123
+  # below are optional properties
+  # you may neglect, it is just for logging purpose
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
